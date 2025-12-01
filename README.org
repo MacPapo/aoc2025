@@ -1,0 +1,15 @@
+wget https://github.com/attractivechaos/klib/raw/master/khash.h
+
+# Crea un nuovo giorno
+make newday DAY=1    # crea day01
+make newday DAY=25   # crea day25
+
+# Compila tutto automaticamente
+make                 # compila tutti i giorni esistenti
+
+# Esegui un giorno
+make run01           # esegue ./build/day01 days/day01/input.txt
+make run25
+
+# Pulizia
+make clean
