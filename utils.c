@@ -1,7 +1,6 @@
 #include "utils.h"
 #include <string.h>
 
-// lol
 char* slurp_file(FILE* f) {
     if (fseek(f, 0, SEEK_END) != 0) return NULL;
     long len = ftell(f);
@@ -21,6 +20,7 @@ char* slurp_file(FILE* f) {
     return buf;
 }
 
+// to
 char** read_all_lines(FILE* f, int* out_count, bool skip_empty) {
     char* content = slurp_file(f);
     if (!content) return NULL;
